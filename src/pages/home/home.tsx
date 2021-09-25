@@ -109,10 +109,11 @@ export default () => {
           });
         }
       });
+    setTimeout(getOrderList, 3000);
   };
 
   const handleSearchClick = () => {
-    setInterval(getOrderList, 3000);
+    getOrderList();
 
     setInterval(async function () {
       if (orderIds.length > 0) {

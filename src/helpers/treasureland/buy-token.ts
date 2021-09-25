@@ -71,7 +71,7 @@ async function buyToken(orderData: any, account: string, amount: number) {
     .send({
       from: account,
       value: orderData.base_price,
-      gas: 500000,
+      gas: 300000,
     });
 
   return result;
